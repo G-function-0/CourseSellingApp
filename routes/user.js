@@ -1,13 +1,17 @@
 const express = require('express');
-const UserRouter = express.Router();
+const userRouter = express.Router();
 
-    UserRouter.post('/user/signup',(req,res)=>{
-
+    userRouter.post('/signup',(req,res)=>{
+        res.json({
+            message:"signup end point"
+        })
     })
     
-    UserRouter.post('/user/signin',(req,res)=>{
-    
+    userRouter.post('/signin',(req,res)=>{
+        res.json({
+            message:"signin  end point"
+        })
     })
 module.exports = {
-    UserRouter
+    userRouter
 }

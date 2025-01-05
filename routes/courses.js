@@ -1,14 +1,19 @@
 const express = require('express');
-const CourseRouter = express.Router();
+const  courseRouter = express.Router();
 
-    CourseRouter.post('/course/purchase',(req,res)=>{
-
+    courseRouter.post('/purchase',(req,res)=>{
+        res.json({
+            message:"purachase end point"
+        })
     })
 
-    CourseRouter.get('/course',(req,res)=>{
+    courseRouter.get('/',(req,res)=>{
+        res.json({
+            message:"courses end point"
+        })
 
     })
 
 module.exports = {
-    CourseRouter
+    courseRouter
 }
